@@ -1,0 +1,54 @@
+#!/bin/zsh
+alias ls='ls --color=auto -F' \
+    l=ls \
+    ld='l -d' \
+    ll='l -l' \
+    la='l -la' \
+    lrt='l -lrt' \
+    psg='ps aux | grep -v grep | grep' \
+    sl="screen -ls" \
+    sr="screen -a -A -d -r" \
+    sx="screen -a -A -x" \
+    ss="screen -a -A -S" \
+    sw="screen -wipe" \
+    tl="tmux list-sessions" \
+    tr="tmux attach -t"\
+    ts="tmux new-session -s"\
+    cx="chmod +x" \
+    c-x="chmod -x" \
+    cr="chmod +r" \
+    c-r="chmod -r" \
+    cw="chmod +w" \
+    c-w="chmod -w" \
+    cX="chmod u+X -R" \
+    ttt="cat /proc/acpi/ibm/thermal" \
+    tt='urxvtc -fn xft:mono-24 -e typespeed' \
+    m=mplayer \
+    mp=mplayer \
+    mm='mplayer -cache 3000'\
+    #mr='m -vfm realvid'\
+    maw='mplayer -ao alsa:device=wolfson'\
+    mai='mplayer -ao alsa:device=hw=Intel'\
+    mau='mplayer -ao alsa:device=ecall'\
+    mam='mplayer -ao alsa:device=plughw=Revolution51'\
+    map='mplayer -ao alsa:device=plughw=default'\
+    mi='mount -o uid=zshuang,posix,utf8,shortname=winnt /dev/disk/iaudio7 /mnt/iaudio7'\
+    p='print'\
+    asdf="setxkbmap dvorak && echo \"kbd set to dvorak layout\""\
+    aoeu="setxkbmap us && echo \"kbd set to us layout\""\
+    nv="LC_CTYPE=en_US.IBM437 urxvt -e most"\
+    sht="TZ='Asia/Shanghai' date"\
+    gb="luit -encoding gb18030"\
+    xs="xsetwacom set sty"\
+    xg="xsetwacom get sty"\
+    s="sudo"\
+    e="eix"\
+    ee="eix -e"\
+    d="dict"\
+    y="yaourt"\
+    p='pacman-color'
+#    a2m='shntool split -t "%n -- %t" -i "ape mac" -o "cust ext=mp3 lame -V0 --vbr-new - %f"'
+alias -g gb='|iconv -f gb18030 -t utf8'\
+         m='|most'
+#    asdf="setxkbmap dvorak && echo \"kbd set to dvorak layout\" && sawfish-client -f restart"\
+#    aoeu="setxkbmap us && echo \"kbd set to us layout\" && sawfish-client -f restart"\
